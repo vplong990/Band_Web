@@ -72,7 +72,7 @@ position: relative;
 }
 
 #nav .subnav{
-    display: block;
+    display: none;
     min-width: 160px;
     position: absolute;
     top : 100%;
