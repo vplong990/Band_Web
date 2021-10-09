@@ -4,3 +4,102 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+Tu ngoai vao trong
+Tu tren xuong duoi
+1. vi tri
+2. kich thuoc
+3. mau sac
+4. kieu dang
+*/
+
+#main{
+
+
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+
+}
+
+#nav ,.subnav {
+    list-style: none;
+}
+
+#nav > li {
+    display: inline-block;
+
+}
+
+#nav li {
+
+position: relative;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+
+    color: #000;
+    background-color: #ccc;
+    width: 100%;
+}
+
+/* Selector truc tiep vao the a cap 1 */
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display :inline-block;
+    
+    
+}
+
+#nav .subnav{
+    display: block;
+    min-width: 160px;
+    position: absolute;
+    top : 100%;
+    left : 0 ;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+
+#nav .subnav a{
+color:#000;
+padding: 0 12px;
+line-height: 38px;
+}
+
+#slider{
+    
+
+}
+
+#content{
+
+
+}
+
+#footer{
+
+
+}
