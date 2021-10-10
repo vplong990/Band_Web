@@ -23,9 +23,14 @@ Tu tren xuong duoi
 }
 
 #header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 46px;
     background-color: #000;
-
+    z-index: 1;
 }
 
 #nav{
@@ -118,9 +123,35 @@ line-height: 38px;
 }
 
 #slider{
-    
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider01.jpg') top center / cover no-repeat;
 
 }
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    
+    /* phuong phap can giua */
+    /* transform: translateX(-50%);left: 50%; */
+    /* su dung width :100 hoac dung left, right:0 */
+    width: 100%;
+    text-align: center;
+    
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
 
 #content{
 
