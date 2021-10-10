@@ -28,6 +28,11 @@ Tu tren xuong duoi
 
 }
 
+#nav{
+    display: inline-block;
+
+}
+
 #nav ,.subnav {
     list-style: none;
 }
@@ -87,6 +92,29 @@ position: relative;
 color:#000;
 padding: 0 12px;
 line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+
+}
+
+
+#header .search-btn{
+    float: right;
+    line-height: 46px;
+    padding: 0 21px;
+    
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 18px;
 }
 
 #slider{
