@@ -344,6 +344,7 @@ line-height: 38px;
     max-width: calc(100%-32px);
     min-height: 200px;
     position: relative;
+    animation: modalFadein ease 0.5s;
 }
 
 .modal-header{
@@ -416,3 +417,14 @@ line-height: 38px;
     color: #2196F3;
 }
 
+@keyframes modalFadein {
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
