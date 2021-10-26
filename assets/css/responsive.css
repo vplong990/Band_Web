@@ -14,7 +14,13 @@
         display: block;
     }
 
+    #nav {
+        display: block;
+    }
+
     #header .search-btn{
         display: none;
     }
+
+   
 }

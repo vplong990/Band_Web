@@ -19,7 +19,7 @@
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="">
+                <li><a href="#">
                     More
                     <i class="nav-arrow-down ti-angle-down"></i>
                 </a>
@@ -251,13 +251,25 @@
         var header = document.getElementById('header');
         var mobiMenu = document.getElementById('mobi-menu');
         var headerHeight = header.clientHeight;
-        mobiMenu.onclick =function(){
+        // Đóng mở mobile menu
+        mobiMenu.onclick = function(){
             var isClose = header.clientHeight === headerHeight;
             if(isClose){
                 header.style.height = 'auto';
             } else{
-                header.style.height = '46px';
+                header.style.height = '46px' ;
             }
+        }
+
+// tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        console.log(menuItems);
+        for (var i = 0; i < menuItems.length ; i++){
+                var menuItem = menuItems[i];
+
+                menuItem.onclick = function () {
+                    header.style.height = null ;
+                }
         }
     </script>
 
