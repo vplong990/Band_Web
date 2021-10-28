@@ -1,5 +1,6 @@
 /* PC */
 @media(min-width: 1024px){
+    
 
 }
 
@@ -14,13 +15,25 @@
         display: block;
     }
 
-    #nav {
-        display: block;
+    #nav >li:first-child {
+        display: inline-block;
     }
 
+     #nav {
+        display: block;
+    } 
+
+    /* ẩn nút search */
     #header .search-btn{
         display: none;
     }
 
+    #header .mobile-menu-btn{
+        display: block;
+    }
+
+    #header{
+        overflow: hidden;
+    }
    
 }

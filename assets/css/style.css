@@ -102,7 +102,7 @@ Tu tren xuong duoi
     background-color: #000;
     z-index: 1;
     /* Khi các đối tượng con tràn ra khỏi đối tượng cha, dùng overflow để ẩn đi */
-    overflow: hidden; 
+    /* overflow: hidden;  */
 }
 
 #nav{
@@ -176,6 +176,13 @@ line-height: 38px;
 
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 #header .mobile-menu-btn,
 #header .search-btn{
     float: right;
@@ -194,11 +201,16 @@ line-height: 38px;
     background-color: #ccc;
 }
 
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
 
 #header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 18px;
+    line-height: 46px;
 }
 
 #slider{
